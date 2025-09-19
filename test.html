@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Static Website</title>
+    <title>Simple Static Website</title>
     <link rel="stylesheet" href="test.css">
 </head>
 <body>
@@ -12,6 +12,7 @@
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#contact">Contact</a></li>
+            <li><a href="#comparison">Comparison</a></li>
         </ul>
     </nav>
     <header>
@@ -22,10 +23,53 @@
         <p>This is a simple static website built with HTML and CSS. It features a clean, professional design with a fixed navigation menu, a centered hero header, main content area, and a footer.</p>
         <h2>Contact</h2>
         <p>Email: example@email.com</p>
-        <p>Phone:  8119066970</p>
+        <p>Phone: (123) 456-7890</p>
+        <h2 id="comparison">Deployment Comparison: Netlify vs AWS S3</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Aspect</th>
+                    <th>Netlify</th>
+                    <th>AWS S3</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Deployment Steps</td>
+                    <td>
+                        1. Create a Netlify account.<br>
+                        2. Add new site.<br>
+                        3. Link to GitHub repo (or drag and drop files).<br>
+                        4. Authorize and select repo.<br>
+                        5. Configure build settings if needed.<br>
+                        6. Deploy.
+                    </td>
+                    <td>
+                        1. Create an AWS account.<br>
+                        2. Create an S3 bucket.<br>
+                        3. Enable static website hosting.<br>
+                        4. Edit block public access settings.<br>
+                        5. Add bucket policy for public access.<br>
+                        6. Configure index and error documents.<br>
+                        7. Upload files.<br>
+                        8. Test the endpoint.
+                    </td>
+                </tr>
+                <tr>
+                    <td>Cost Implications</td>
+                    <td>Free tier: Unlimited sites, 100GB bandwidth/month, then $55 per additional 100GB. Paid plans start at $9/month for more features.</td>
+                    <td>Pay-as-you-go: Storage ~$0.023/GB/month (first 50TB), data transfer $0.09/GB (first 10TB), plus requests. Low traffic sites cost under $1/month. Optional CloudFront and Route53 add costs.</td>
+                </tr>
+                <tr>
+                    <td>Ease of Use</td>
+                    <td>Very easy: Git integration, automatic deploys, drag-and-drop. Minimal configuration.</td>
+                    <td>Moderate: More manual steps, requires AWS console navigation, policy setup. Better for advanced users.</td>
+                </tr>
+            </tbody>
+        </table>
     </div>
     <footer>
-        <p>&copy; 2025 Website</p>
+        <p>&copy; 2025 Simple Website.</p>
     </footer>
 </body>
 </html>

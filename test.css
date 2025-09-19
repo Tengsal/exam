@@ -80,7 +80,7 @@ header h1 {
 }
 
 footer {
-    background-color: #dda479;
+    background-color: #2c3e50;
     color: white;
     text-align: center;
     padding: 0rem;
@@ -88,6 +88,23 @@ footer {
     bottom: 0;
     width: 100%;
     font-size: 0.9rem;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+
+table th, table td {
+    border: 1px solid #ddd;
+    padding: 0.75rem;
+    text-align: left;
+}
+
+table th {
+    background-color: #f4f4f4;
+    font-weight: bold;
 }
 
 @media (max-width: 768px) {
@@ -99,5 +116,8 @@ footer {
     }
     .container {
         width: 90%;
+    }
+    table {
+        font-size: 0.9rem;
     }
 }
