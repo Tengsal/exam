@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simple Static Website</title>
+    <title> Static Website</title>
     <link rel="stylesheet" href="test.css">
 </head>
 <body>
@@ -24,13 +24,13 @@
         <h2>Contact</h2>
         <p>Email: example@email.com</p>
         <p>Phone: (123) 456-7890</p>
-        <h2 id="comparison">Deployment Comparison: Netlify vs AWS S3</h2>
+        <h2 id="comparison">Deployment Comparison: Netlify vs GitHub Pages</h2>
         <table>
             <thead>
                 <tr>
                     <th>Aspect</th>
                     <th>Netlify</th>
-                    <th>AWS S3</th>
+                    <th>GitHub Pages</th>
                 </tr>
             </thead>
             <tbody>
@@ -45,31 +45,30 @@
                         6. Deploy.
                     </td>
                     <td>
-                        1. Create an AWS account.<br>
-                        2. Create an S3 bucket.<br>
-                        3. Enable static website hosting.<br>
-                        4. Edit block public access settings.<br>
-                        5. Add bucket policy for public access.<br>
-                        6. Configure index and error documents.<br>
-                        7. Upload files.<br>
-                        8. Test the endpoint.
+                        1. Create a GitHub account.<br>
+                        2. Create a new repository.<br>
+                        3. Upload index.html and styles.css to the repository.<br>
+                        4. Go to repository Settings.<br>
+                        5. Scroll to Pages section.<br>
+                        6. Select source branch (main/master) and root folder.<br>
+                        7. Save and wait for deployment.
                     </td>
                 </tr>
                 <tr>
                     <td>Cost Implications</td>
-                    <td>Free tier: Unlimited sites, 100GB bandwidth/month, then $55 per additional 100GB. Paid plans start at $9/month for more features.</td>
-                    <td>Pay-as-you-go: Storage ~$0.023/GB/month (first 50TB), data transfer $0.09/GB (first 10TB), plus requests. Low traffic sites cost under $1/month. Optional CloudFront and Route53 add costs.</td>
+                    <td>Free tier: Unlimited sites, 100GB bandwidth/month, then $55 per additional 100GB. Paid plans start at $19/month for more features.</td>
+                    <td>Completely free for public repositories. Private repositories require GitHub Pro ($4/month) or higher plans. No bandwidth limits for public sites.</td>
                 </tr>
                 <tr>
                     <td>Ease of Use</td>
                     <td>Very easy: Git integration, automatic deploys, drag-and-drop. Minimal configuration.</td>
-                    <td>Moderate: More manual steps, requires AWS console navigation, policy setup. Better for advanced users.</td>
+                    <td>Easy for Git users: Requires GitHub setup, but simple for basic sites. No drag-and-drop; Git push required for updates.</td>
                 </tr>
             </tbody>
         </table>
     </div>
     <footer>
-        <p>&copy; 2025 Simple Website.</p>
+        <p>&copy; 2025 Website.</p>
     </footer>
 </body>
 </html>
